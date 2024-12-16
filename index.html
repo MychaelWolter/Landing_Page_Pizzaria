@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+
+    <title>Restaurante Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <i class="fa-solid fa-pizza-slice" id="navLogo"> pizza</i>
+
+            <ul id="navList">
+                <li class="navItem active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="navItem">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="navItem">
+                    <a href="#location">Localização</a>
+                </li>
+                <li class="navItem">
+                    <a href="#aboutUs">Sobre Nós</a>
+                </li>
+                <li class="navItem">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btnDefault">
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+
+            <button id="mobileBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobileMenu">
+            <ul id="mobileNavList">
+                <li class="navItem">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="navItem">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="navItem">
+                    <a href="#location">Localização</a>
+                </li>
+                <li class="navItem">
+                    <a href="#aboutUs">Sobre Nós</a>
+                </li>
+                <li class="navItem">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btnDefault">
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div>
+                <h1 class="title">Manaus <span>Pizza</span></h1>
+                <p class="description">Gama completa de pizzas italianas, hambúrgueres no nosso restaurante a um preço especial</p>
+                <button id="ctaButtons">
+                    <a href="#" class="btnDefault">Peça Agora</a>
+                </button>
+                <ul>
+                    <li>
+                        <a href="">I</a>
+                    </li>
+                    <li>
+                        <a href="">F</a>
+                    </li>
+                    <li>
+                        <a href="">T</a>
+                    </li>
+                    <li>
+                        <a href="">Y</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    
+    <script src="src/scripts/scripts.js"></script>
+</body>
+</html>
