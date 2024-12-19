@@ -75,11 +75,15 @@
     background-color: var(--secundary);
     color: var(--white);
     padding: 0.6em;
-    margin: 55px 15px 0 135px;
+    margin: 55px 15px 0 140px;
     border-radius: 15px;
     text-align: center;
     font-size: 0.7em;
     cursor: pointer;
+}
+
+.fa-solid.fa-star span {
+    font-weight: 400;
 }
 
 .descriptionCard {
@@ -124,4 +128,3 @@
     color: var(--grayLight);
     text-decoration: none;
 }
-
