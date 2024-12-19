@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -10,8 +11,10 @@
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/delivery.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
 
-    <title>Restaurante Landing Page</title>
+    <link rel="shortcut icon" href="src/images/pizzaFavicon.jpeg" type="image/x-icon">
+    <title>Pizzaria Landing Page</title>
 </head>
 <body>
     <header>
@@ -23,13 +26,13 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="navItem">
+                    <a href="#delivery">Sobre Nós</a>
+                </li>
+                <li class="navItem">
                     <a href="#menu">Cardápio</a>
                 </li>
                 <li class="navItem">
                     <a href="#location">Localização</a>
-                </li>
-                <li class="navItem">
-                    <a href="#aboutUs">Sobre Nós</a>
                 </li>
                 <li class="navItem">
                     <a href="#contact">Contato</a>
@@ -51,13 +54,13 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="navItem">
+                    <a href="#delivery">Sobre Nós</a>
+                </li>
+                <li class="navItem">
                     <a href="#menu">Cardápio</a>
                 </li>
                 <li class="navItem">
                     <a href="#location">Localização</a>
-                </li>
-                <li class="navItem">
-                    <a href="#aboutUs">Sobre Nós</a>
                 </li>
                 <li class="navItem">
                     <a href="#contact">Contato</a>
@@ -125,14 +128,214 @@
                     <i class="fa-solid fa-boxes-packing"></i>
                     <h3>Embalagem</h3>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi culpa amet quasi cupiditate deserunt minima fugit autem.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi culpa amet quasi.</p>
                 </li>
             </ul>
+        </section>
+
+        <section id="menu">
+            <h2 class="subtitle">Cardápio</h2>
+
+            <ul id="menuOptions">
+                <li class="menuItem active">Pizza</li>
+                <li class="menuItem">Grelha</li>
+                <li class="menuItem">Salada</li>
+                <li class="menuItem">Doce</li>
+            </ul>
+
+            <div class="menuContainer" id="menuContainer">
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menuCard">
+                    <div class="imageCard">
+                        <div class="informationCard">
+                            <i class="fa-regular fa-clock"> 
+                                <span>37min</span>
+                            </i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <i class="fa-solid fa-star"> 4,5</i>
+                    </div>
+
+                    <div class="descriptionCard">
+                        <div class="nameCard">
+                            <h4>Pizza Italiana</h4>
+                            <p>R$49,99</p>
+                        </div>
+
+                        <button class="btnCard">
+                            <a href="">Peça Agora</a>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
         </section>
     </main>
 
     <footer></footer>
     
     <script src="src/scripts/scripts.js"></script>
+    <script src="src/scripts/menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+// Mobile Button
+
 const mobileBtn = document.getElementById("mobileBtn");
 
 const mobileMenuBar = () => {
@@ -9,3 +11,14 @@ const mobileMenuBar = () => {
 };
 
 mobileBtn.addEventListener("click", mobileMenuBar);
+
+// Nav List Effect
+
+const navList = document.getElementById("navList");
+
+const navListEffect = (event) => {
+    const navItemClick = event.target.id;
+
+};
+
+navList.addEventListener("click", navListEffect);

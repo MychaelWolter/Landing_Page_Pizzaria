@@ -27,7 +27,7 @@ header {
     font-weight: 600;
 }
 
-.navItem.active a {
+.navItem a:hover, .navItem.active  {
     color: var(--white);
     border-bottom: 3px solid var(--secundary);
 }
