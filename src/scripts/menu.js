@@ -39,33 +39,27 @@ const sweets = [
     {name: "", price: "9,99", image: ""}
 ];
 
-const menuOptions = document.getElementById("menuOptions");
+const createCard = (menuItemSelected, category) => {
+    return `
+        <div class="menuCard">
+            <div class="imageCard" style="background-image: url('src/images/${category}/${menuItemSelected.image}')">
+                
+                <div class="informationCard">
+                    <i class="fa-regular fa-clock"> 
+                        <span>37min</span>
+                    </i>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
 
-
-
-
-const createCard = (menuItemSelected) => {
-    const div = document.createElement("div");
-    div.classList.add("menuCard");
-    div.innerHTML = `
-        <div class="imageCard">
-
-            <div class="informationCard">
-                <i class="fa-regular fa-clock"> 
-                    <span>37min</span>
+                <i class="fa-solid fa-star"> 
+                    <span>4,5</span>
                 </i>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-
-            <i class="fa-solid fa-star"> 
-                <span>4,5</span>
-            </i>
             </div>
 
             <div class="descriptionCard">
                 <div class="nameCard">
-                    <h4>${Pizza Italiana} </h4>
-                    <p>R$${4999}</p>
+                    <h4>${menuItemSelected.name}</h4>
+                    <p>R$${menuItemSelected.price}</p>
                 </div>
 
                 <button class="btnCard">
@@ -73,32 +67,41 @@ const createCard = (menuItemSelected) => {
                 </button>
             </div>
         </div>
+
     `;
-
-    const imageCard = 
-
-    document.getElementById("menuContainer").appendChild("div");
 };
-
-
 
 const menuItemClick = (event) => {
-
     const menuItem = event.target.id;
+    const menuContainer = document.getElementById("menuContainer");
+
+    menuContainer.innerHTML = "";
     
-    if (menuItem == "pizza"){
+    if (menuItem === "pizzas"){
+        return pizzas.forEach((menuItemSelected) => {
+            menuContainer.innerHTML += createCard(menuItemSelected, "pizzas");
+        });
+    };
 
-
-    } else if (menuItem == "grill"){
-
-
-    } else if (menuItem == "salad"){
-        
-
-    } else {
-
-
+    if (menuItem === "grids"){
+        return grids.forEach((menuItemSelected) => {
+            menuContainer.innerHTML += createCard(menuItemSelected, "grids");
+        });
+    };
+    
+    if (menuItem === "salads"){    
+        return salads.forEach((menuItemSelected) => {
+            menuContainer.innerHTML += createCard(menuItemSelected, "salads");
+        });
+    };
+    
+    if (menuItem === "sweets"){
+        return sweets.forEach((menuItemSelected) => {
+            menuContainer.innerHTML += createCard(menuItemSelected, "sweets");
+        });
     };
 };
+
+const menuOptions = document.getElementById("menuOptions");
 
 menuOptions.addEventListener("click", menuItemClick);
