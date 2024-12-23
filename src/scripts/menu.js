@@ -42,6 +42,7 @@ const sweets = [
 const createCard = (menuItemSelected, category) => {
     return `
         <div class="menuCard">
+
             <div class="imageCard" style="background-image: url('src/images/${category}/${menuItemSelected.image}')">
                 
                 <div class="informationCard">
@@ -54,9 +55,11 @@ const createCard = (menuItemSelected, category) => {
                 <i class="fa-solid fa-star"> 
                     <span>4,5</span>
                 </i>
+
             </div>
 
             <div class="descriptionCard">
+
                 <div class="nameCard">
                     <h4>${menuItemSelected.name}</h4>
                     <p>R$${menuItemSelected.price}</p>
@@ -65,9 +68,10 @@ const createCard = (menuItemSelected, category) => {
                 <button class="btnCard">
                     <a href="">Peça Agora</a>
                 </button>
-            </div>
-        </div>
 
+            </div>
+
+        </div>
     `;
 };
 
