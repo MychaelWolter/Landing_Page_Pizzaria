@@ -10,14 +10,14 @@ const pizzas = [
 ];
 
 const grids = [
-    {name: "Carne", price: "64,99", image: "grill1.jpeg"},
-    {name: "Carne", price: "59,99", image: "grill2.jpeg"},
-    {name: "Carne", price: "59,99", image: "grill3.jpeg"},
-    {name: "Carne", price: "69,99", image: "grill4.jpeg"},
-    {name: "Carne", price: "79,99", image: "grill5.jpeg"},
-    {name: "Carne", price: "74,99", image: "grill6.jpeg"},
-    {name: "Carne", price: "64,99", image: "grill7.jpeg"},
-    {name: "Carne", price: "74,99", image: "grill8.jpeg"}
+    {name: "Maminha",                 price: "64,99", image: "grill1.jpeg"},
+    {name: "Picanha",                 price: "59,99", image: "grill2.jpeg"},
+    {name: "Hamburguer Artesanal",    price: "59,99", image: "grill3.jpeg"},
+    {name: "Hamburguer de Picanha",   price: "69,99", image: "grill4.jpeg"},
+    {name: "Hamburguer Caramelizado", price: "79,99", image: "grill5.jpeg"},
+    {name: "Hamburguer com Salada",   price: "74,99", image: "grill6.jpeg"},
+    {name: "Costela",                 price: "64,99", image: "grill7.jpeg"},
+    {name: "Costela Desfiada",        price: "74,99", image: "grill8.jpeg"}
 ];
 
 const salads = [
