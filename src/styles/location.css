@@ -44,6 +44,8 @@ aside {
 #imageReview {
     width: 40%;
     position: relative;
+    display: flex;
+    justify-content: right;
 }
 
 #imageReview img {
@@ -100,6 +102,11 @@ iframe {
 }
 
 @media screen and (max-width: 900px) {
+    #imageReview {
+        display: flex;
+        justify-content: center;
+    }
+
     #imageReview img {
         width: 15em;
         height: 10em;
