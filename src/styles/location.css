@@ -47,8 +47,8 @@ aside {
 }
 
 #imageReview img {
-    width: 100%;
-    height: 300px;
+    width: 20em;
+    height: 15em;
     border-radius: 15px;
 }
 
@@ -60,7 +60,7 @@ aside {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     padding: 1em 1.5em;
     border-radius: 15px;
 }
@@ -93,8 +93,29 @@ aside {
 }
 
 iframe {
-    width: 600px;
-    height: 300px;
+    width: 40em;
+    height: 20em;
+    border-radius: 15px;
+    margin-bottom: 4em;
+}
+
+@media screen and (max-width: 900px) {
+    #imageReview img {
+        width: 15em;
+        height: 10em;
+    }
+
+    #requestCard {
+        top: 100%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        max-width: 200px;
+    }
+
+    iframe {
+        width: 30em;
+        height: 15em;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -116,8 +137,8 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70%;
-        height: 150px;
+        width: 15em;
+        height: 10em;
     }
 
     #requestCard {
@@ -128,7 +149,7 @@ iframe {
     }
 
     iframe {
-        width: 280px;
-        height: 140px;
+        width: 20em;
+        height: 10em;
     }
 }
