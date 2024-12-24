@@ -1,0 +1,134 @@
+#location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 8%;
+}
+
+aside {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0 12em;
+}
+
+#textReview {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--grayLight);
+}
+
+#textReview .fa-regular.fa-comments {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    opacity: 0.6;
+}
+
+#contentTextReview {
+    width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+
+#authorRextReview {
+    font-size: 0.8em;
+}
+
+#authorRextReview span {
+    color: var(--white);
+    font-weight: 600;
+}
+
+#imageReview {
+    width: 40%;
+    position: relative;
+}
+
+#imageReview img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#requestCard {
+    position: absolute;
+    left: -20%;
+    top: 70%;
+    width: 20em;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 1em 1.5em;
+    border-radius: 15px;
+}
+
+#headCard {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.fa-regular.fa-star {
+    color: var(--secundary);
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+#requestCard p {
+    font-size: .8em;
+}
+
+#requestCard button {
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+iframe {
+    width: 600px;
+    height: 300px;
+}
+
+@media screen and (max-width: 700px){
+    aside {
+        flex-direction: column;
+        margin-bottom: 20em;
+    }
+
+    #textReview, #imageReview {
+        width: 100%;
+        margin: auto;
+    }
+
+    #textReview {
+        margin-bottom: 4em;
+    }
+
+    #imageReview img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 150px;
+    }
+
+    #requestCard {
+        top: 150%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        max-width: 200px;
+    }
+
+    iframe {
+        width: 280px;
+        height: 140px;
+    }
+}
