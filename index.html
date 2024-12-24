@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/styles/delivery.css">
     <link rel="stylesheet" href="src/styles/menu.css">
     <link rel="stylesheet" href="src/styles/location.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
 
     <link rel="shortcut icon" href="src/images/pizzaFavicon.jpeg" type="image/x-icon">
     <title>Pizzaria Landing Page</title>
@@ -186,7 +187,25 @@
         </section>
 
         <section id="contact">
+            <h2 class="subtitle">Contato</h2>
 
+            <p>Entre em contanto conosco</p>
+
+            <form action="" method="post">
+
+                <input type="text" name="name" id="idName" placeholder="Seu nome" autocomplete="no">
+
+                <input type="number" name="phone" id="idPhone" placeholder="Seu número de telefone" autocomplete="no">
+
+                <textarea name="message" id="idMessage" placeholder="Mensagem" autocomplete="no"></textarea>
+
+                <div id="checkbox">
+                    <input type="checkbox" name="accept" id="idAccept">
+                    <label for="idAccept">Eu concordo com os termos e condições desse artigo</label>
+                </div>
+
+                <button class="btnDefault">Envie sua mensagem</button>
+            </form>
         </section>
     </main>
 
