@@ -1,0 +1,81 @@
+footer {
+    width: 100%;
+    height: 50vh;
+    background: url("../images/pizzaBackground.webp") no-repeat center;
+    background-size: cover;
+}
+
+#footerContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(219, 0, 66, 0.8);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navLogoFooter {
+    font-size: 1.5em;
+}
+
+.socialMediaButtonsFooter {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+.socialMediaButtonsFooter a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.socialMediaButtonsFooter a:hover {
+    color: var(--grayLight);
+    transform: translateY(-4px);
+}
+
+#navListFooter {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.navItemFooter a {
+    text-decoration: none;
+    font-size: .8em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.navItemFooter a:hover, .navItemFooter.active  {
+    color: var(--grayLight);
+    border-bottom: 2px solid var(--grayLight);
+}
+
+#navListContact {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    list-style: none;
+    font-size: 0.7em;
+}
+
+.itemListContact span {
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .navItemFooter a  {
+        font-size: .7em;
+    } 
+
+    #navListContact {
+        flex-direction: column;
+    }
+}
