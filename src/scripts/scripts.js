@@ -1,9 +1,9 @@
 // Mobile Button
 
-const mobileBtn = document.getElementById("mobileBtn");
+const mobileBtn = document.querySelector("#mobileBtn");
 
 const mobileMenuBar = () => {
-    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenu = document.querySelector("#mobileMenu");
     const icon = mobileBtn.querySelector("i");
 
     mobileMenu.classList.toggle("active");
